@@ -63,3 +63,7 @@ void SeguePista()
     AR_MotorEsq(100, TRAS);
   }
 }
+
+
+void nothing(){
+}
