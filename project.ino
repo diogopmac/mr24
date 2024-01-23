@@ -67,3 +67,7 @@ void SeguePista()
 
 void nothing(){
 }
+
+void test2(){
+}
+
