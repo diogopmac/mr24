@@ -1,10 +1,10 @@
-#include <ARSC_Motores.h>
+#include <motors.h>
 #include <AR_SensorDePista.h>
 
 int pista;
 
 void setup() {
-  AR_InitMotores(11,13,3,12); 
+  initmot(11,13,3,12); 
   AR_InitSensorPista3(5,6,7);
 
 }
@@ -19,49 +19,47 @@ void SeguePista()
 {
   if (pista=4)
   {
-    AR_MotorDir(255, FRENTE);
-    AR_MotorEsq(255, FRENTE);
+    mDir(255, front);
+    mEsq(255, front);
   }
   if (pista=6)
   {
-    AR_MotorDir(150, FRENTE);
-    AR_MotorEsq(255, FRENTE);
+    mDir(150, front);
+    mEsq(255, front);
   }
   if (pista=2)
   {
-    AR_MotorDir(100, FRENTE);
-    AR_MotorEsq(255, FRENTE);
+    mDir(100, front);
+    mEsq(255, front);
   }
   if (pista=3)
   {
-    AR_MotorDir(0, FRENTE);
-    AR_MotorEsq(255, FRENTE);
+    mDir(0, front);
+    mEsq(255, front);
   }
   if (pista=1)
   {
-    AR_MotorDir(100, TRAS);
-    AR_MotorEsq(255, FRENTE);
+    mDir(100, back);
+    mEsq(255, front);
   }
   if (pista=12)
   {
-    AR_MotorDir(255, FRENTE);
-    AR_MotorEsq(150, FRENTE);
+    mDir(255, front);
+    mEsq(150, front);
   }
   if (pista=8)
   {
-    AR_MotorDir(255, FRENTE);
-    AR_MotorEsq(100, FRENTE);
+    mDir(255, front);
+    mEsq(100, front);
   }
   if (pista=24)
   {
-    AR_MotorDir(255, FRENTE);
-    AR_MotorEsq(0, FRENTE);
+    mDir(255, front);
+    mEsq(0, front);
   }
   if (pista=16)
   {
-    AR_MotorDir(255, FRENTE);
-    AR_MotorEsq(100, TRAS);
+    mDir(255, front);
+    mEsq(100, back);
   }
 }
-
-
