@@ -1,16 +1,16 @@
+#include <sensor.h>
 #include <motors.h>
-#include <AR_SensorDePista.h>
 
 int pista;
 
 void setup() {
   initmot(11,13,3,12); 
-  AR_InitSensorPista3(5,6,7);
+  sensorInit(5,6,7);
 
 }
 
 void loop() {
-  pista=AR_LerSensorPista3();
+  pista=readSensor();
   SeguePista();
 }
 
