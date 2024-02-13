@@ -6,7 +6,6 @@ int pista;
 void setup() {
   initmot(11,13,3,12); 
   sensorInit(5,6,7);
- //hello
 }
 
 void loop() {
