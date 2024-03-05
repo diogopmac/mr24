@@ -21,12 +21,12 @@ void SeguePista()
     mDir(255, front);
     mEsq(255, front);
   }
-  if (pista==3)         //virar muito à esquerda
+  if (pista==6)         //virar muito à esquerda
   {
     mDir(50, front);
     mEsq(255, front);
   }
-  if (pista==6)         //virar muito à direita
+  if (pista==3)         //virar muito à direita
   {
     mDir(255, front);
     mEsq(50, front);
